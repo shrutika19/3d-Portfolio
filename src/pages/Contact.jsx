@@ -13,7 +13,7 @@ const Contact = () => {
     const [isloading, setIsLoading] = useState(false)
     const [currentAnimation, setcurrentAnimation] = useState('idle');
 
-    const { alert, showAlert, hideAlert } = useAlert;
+    const { alert, showAlert, hideAlert } = useAlert();
 
     const handleChange = ({ target: { name, value } }) => {
         setForm({ ...form, [name]: value });
@@ -68,9 +68,9 @@ const Contact = () => {
     }
 
     return (
-        <section className='relative flex lg:flex-row flex-col max-container'>
-            {/* {alert.show && <Alert {...alert} />} */}
-            <Alert {...alert} />
+        <section className='relative flex lg:flex-row flex-col max-container h-full'>
+            {alert.show && <Alert {...alert} />}
+            {/* <Alert text="test" /> */}
             <div className='flex-1 min-w-[50%] flex flex-col'>
                 <h1 className='head-text'>Get in Touch</h1>
                 <form
