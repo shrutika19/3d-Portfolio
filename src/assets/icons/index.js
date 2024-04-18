@@ -27,6 +27,9 @@ import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import java from './java.svg'
+import aws from './aws.svg'
+import bootstrap from './bootstrap.svg'
+import tailwind from './tailwind.svg'
 
 export {
     css,
@@ -57,5 +60,8 @@ export {
     contact,
     soundon,
     soundoff,
-    java
+    java,
+    aws,
+    bootstrap,
+    tailwind
 }

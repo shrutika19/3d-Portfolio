@@ -23,7 +23,11 @@ import {
     summiz,
     tailwindcss,
     threads,
-    java
+    java,
+    aws,
+    bootstrap,
+    tailwind
+
 } from "../assets/icons";
 
 export const skills = [
@@ -78,7 +82,21 @@ export const skills = [
         name: 'Java',
         type: 'Backend',
     },
-
+    {
+        imageUrl: aws,
+        name: 'AWS',
+        type: 'Cloud',
+    },
+    {
+        imageUrl: bootstrap,
+        name: 'Bootstrap',
+        type: 'Frontend',
+    },
+    {
+        imageUrl: tailwind,
+        name: 'Tailwind CSS',
+        type: 'Frontend',
+    },
 
 ];
 
@@ -92,6 +110,7 @@ export const experiences = [
         points: [
             "Developing and maintaining web applications using React.js and Asp .Net Framework.",
             "Working with Kendo React UI",
+            "Implementing OIDC Authentication in .Net MVC Application",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Finding and fixing bugs",
         ],
@@ -144,6 +163,13 @@ export const projects = [
         name: 'Social Media Dashboard',
         description: 'Built a social media dashboard, using React.js, MUI',
         link: 'https://github.com/shrutika19/react-mui',
+    },
+    {
+        iconUrl: car,
+        theme: 'btn-back-orange',
+        name: 'Airbnb Clone',
+        description: 'Built fullstack airbnb clone, using MERN Stack, Tailwind CSS, Razorpay Payment Gateway ',
+        link: 'https://github.com/shrutika19/airbnb-clone',
     },
     // {
     //     iconUrl: threads,
